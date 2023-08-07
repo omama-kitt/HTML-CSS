@@ -6,9 +6,13 @@ body {
 }
 
 .gradient-background {
-    /* Set the gradient background to cover the entire viewport */
+
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
-    background: linear-gradient(180deg, #f0f0f0 66%, #cb3931 66%);
+    width: 100%;
+    background: linear-gradient(180deg, #f0f0f0 62%, #cb3931 30%);
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
@@ -17,30 +21,29 @@ body {
 
 .blank-sheet {
     width: 800px;
-    /* Adjust the width as per your requirement */
+
     height: 700px;
-    /* Adjust the height as per your requirement */
     background-color: white;
     box-shadow: 0 0 10px #e0e0e0;
-    /* Add the black shadow */
+
     position: relative;
-    /* Use relative positioning for the new gray rectangle */
+
     padding-right: 50px;
-    /* Add padding to the right side of the blank sheet */
+
     overflow: visible;
 }
 
 .gray-rectangle {
     position: absolute;
-    /* Use absolute positioning to place the gray rectangle in the middle */
+
     top: 20%;
-    /* Adjust the distance of the gray rectangle from the top */
+
     left: 30px;
-    /* Add a small distance from the left */
+
     right: 0;
-    /* Make the rectangle contiguous on the right */
+
     height: 100px;
-    /* Adjust the height of the gray rectangle as per your requirement */
+
     background-color: #ccc;
     height: 300px;
 }
@@ -51,11 +54,12 @@ body {
     color: #cb3931;
     font-size: 14px;
     position: absolute;
-    /* Use absolute positioning to place the text in the top left */
+
     top: 20px;
-    /* Add smaller distance from the top */
+
     left: 30px;
-    /* Add smaller distance from the left */
+    width: 300px;
+
 }
 
 .top-right-image {
@@ -63,109 +67,87 @@ body {
     top: 0;
     right: 0;
     padding: 10px;
-    /* You can adjust the padding to give some space around the image */
+
 }
 
-/* New styles to resize the image */
+
 .top-right-image img {
     width: 300px;
-    /* Adjust the width to your desired size */
+
     height: 250px;
-    /* The height will be automatically adjusted to maintain aspect ratio */
+
 }
 
-/* Your existing styles for blank-sheet and other elements go here */
 
-/* New styles for the top-right image */
-/* Your existing styles for blank-sheet and other elements go here */
-
-/* New styles for the top-right image */
 .top-right-image {
     position: absolute;
     top: 0;
     right: 80px;
-    /* Adjust the distance from the right */
+
     padding: 0;
     right: 120px;
-    /* Remove padding to make the image touch the top and right */
-    /* You can adjust the padding to give some space around the image */
+
     z-index: 1;
-    /* Set a higher z-index to place the image on top */
+
 
 }
 
-/* New styles for the gray rectangle */
+
 .gray-rectangle {
     position: absolute;
     top: 20%;
     left: 30px;
     right: 0;
     height: 100px;
-    /* Adjust the height of the gray rectangle as per your requirement */
+
     background-color: #ccc;
     height: 300px;
     z-index: 0;
-    /* Set a lower z-index for the gray rectangle, so it stays below the image */
+
 }
 
 .text-inside-gray-rectangle {
     color: #000;
-    /* Change the text color if needed */
     font-size: 40px;
     position: absolute;
     top: 120px;
-    /* Adjust the distance from the top */
+
     left: 50px;
-    /* Adjust the distance from the left */
     font-weight: bold;
 }
 
 .text-inside-gray-rectangle2 {
     color: #cb3931;
-    /* Change the text color if needed */
     font-size: 16px;
     position: absolute;
     top: 240px;
-    /* Adjust the distance from the top */
     left: 50px;
-    /* Adjust the distance from the left */
 }
 
 .phone-number {
     color: #cb3931;
-    /* Change the text color if needed */
     font-size: 16px;
     position: absolute;
     top: 140px;
-    /* Adjust the distance from the top */
     left: 460px;
-    /* Adjust the distance from the left */
 }
 
-/* ... Rest of the CSS ... */
 
-/* New styles for the social icons */
 .social-icons {
     position: absolute;
     bottom: 30px;
-    /* Adjust the distance from the bottom */
     right: 70px;
-    /* Adjust the distance from the left */
 }
 
 .social-icons a {
     margin-right: 10px;
-    /* Add some spacing between the icons */
 }
 
 .social-icons img {
     width: 20px;
-    /* Adjust the width of the icons as needed */
     height: auto;
-    /* Automatically adjust the height to maintain the aspect ratio */
 }
 
-/* ... Rest of the CSS ... */
 .social-icons a {
     display: inline-block;
 }
@@ -174,69 +156,182 @@ body {
 
 
     position: absolute;
-    /* Adjust the position of the text under the blank sheet */
     top: 500px;
     left: 30px;
-
-    /* Center the text horizontally */
+    width: 200px;
 }
 
 .right-under-blank {
 
 
     position: absolute;
-    /* Adjust the position of the text under the blank sheet */
     top: 500px;
     right: 30px;
 
-    /* Center the text horizontally */
 }
 
 .experience-text {
     color: #cb3931;
-    /* Set the color for the "EXPERIENCE" text */
     font-size: 20px;
-    /* Set the font size for the "EXPERIENCE" text */
-    font-weight: bold;
-    /* Set any additional styles as needed */
-}
-
-.year2 {
-    color: #000;
-    /* Set the color for the year "2023" */
-    font-size: 20px;
-    /* Set the font size for the year "2023" */
     font-weight: bold;
 }
 
 .year2 {
     color: #000;
-    /* Set the color for the year "2023" */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.year2 {
+    color: #000;
     font-size: 16px;
-    /* Set the font size for the year "2023" */
 }
 
 .first-text {
     color: #000;
-    /* Set the first text color */
     font-size: 18px;
-    /* Set the font size for the first text */
     font-weight: bold;
-    /* Set any additional styles as needed */
 }
 
 .second-text {
     color: #cb3931;
-    /* Set the second text color */
     font-size: 18px;
-    /* Set the font size for the second text */
     font-style: italic;
-    /* Set any additional styles as needed */
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-device-width: 300px) and (max-device-width: 389px) {
+    .gradient-background {
+        background-size: 100% 100%;
+        background: linear-gradient(180deg, #f0f0f0 53%, #cb3931 26%);
+    }
+
     .blank-sheet {
-        width: 90%;
+        width: 80%;
+        height: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-right-image {
+        order: 2;
+        top: 0px;
+        left: 220PX;
+
+    }
+
+    .top-right-image img {
+        width: 110PX;
+        height: auto;
+        height: 200PX;
+
+    }
+
+    .gray-rectangle {
+        height: 200px;
+        top: 160px;
+
+    }
+
+    .text-inside-blank {
+        font-size: 11px;
+        text-align: center;
+        top: 40PX;
+        width: 180px;
+    }
+
+    .text-inside-gray-rectangle {
+
+        top: 60px;
+        font-size: 28px;
+
+
+    }
+
+    .phone-number {
+        font-size: 10px;
+        text-align: left;
+        left: 150PX;
+        top: 60px;
+
+    }
+
+    .social-icons {
+        right: 20px;
+        top: 140px;
+
+    }
+
+    .text-inside-gray-rectangle2 {
+        top: 140px;
+
+    }
+
+    .text-under-blank {
+        top: 380px;
+        left: 30PX;
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .right-under-blank {
+        top: 380px;
+        left: 200px;
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .experience-text {
+        font-size: 14px;
+
+    }
+
+    .year2 {
+        font-size: 14px;
+    }
+
+    .first-text,
+    .second-text {
+        font-size: 14px;
+    }
+
+    .social-icons img {
+        width: 10px;
+        height: auto;
+    }
+
+    .social-icons {
+        right: 15px;
+
+
+    }
+
+}
+
+@media screen and (min-device-width: 390px) and (max-device-width: 399px) {
+    .text-inside-gray-rectangle {
+
+        top: 90px;
+
+    }
+
+    .gradient-background {
+
+        background: linear-gradient(180deg, #f0f0f0 64%, #cb3931 26%);
+
+    }
+
+    .text-inside-gray-rectangle2 {
+        top: 200px;
+
+    }
+
+
+    .blank-sheet {
+        width: 80%;
+        height: 80%;
         max-width: 400px;
         margin: 0 auto;
         display: flex;
@@ -245,13 +340,16 @@ body {
     }
 
     .social-icons {
-        right: 40px;
+        right: 20px;
+        top: 200px;
+
     }
 
     .top-right-image {
         order: 2;
         top: 0px;
-        left: 280PX;
+        left: 235PX;
+
     }
 
     .top-right-image img {
@@ -264,34 +362,40 @@ body {
     .gray-rectangle {
         order: 1;
         margin-top: 20px;
+
     }
 
     .text-inside-blank {
         font-size: 11px;
         text-align: center;
         top: 40PX;
+        width: 200px;
     }
 
     .phone-number {
         font-size: 10px;
         text-align: left;
-        left: 250PX;
+        left: 200PX;
+        top: 90px;
+
     }
 
     .text-under-blank {
-        text-align: center;
-        top: 540px;
-        left: 0PX;
+        top: 500px;
+        left: 30PX;
+        font-size: 12px;
     }
 
     .right-under-blank {
-        right: 0;
-        top: 540px;
-        right: 0PX;
+        top: 500px;
+        left: 220px;
+        font-size: 12px;
+        width: 140px;
     }
 
     .experience-text {
         font-size: 10px;
+
     }
 
     .year2 {
@@ -301,5 +405,205 @@ body {
     .first-text,
     .second-text {
         font-size: 8px;
+    }
+
+    .social-icons img {
+        width: 10px;
+
+    }
+}
+
+@media screen and (min-device-width: 700px) and (max-device-width: 850px) {
+    .blank-sheet {
+        width: 80%;
+        height: 90%;
+
+    }
+
+    .gradient-background {
+
+        background: linear-gradient(180deg, #f0f0f0 57%, #cb3931 26%);
+
+    }
+
+    .top-right-image {
+        order: 2;
+        top: 0px;
+        left: 340PX;
+
+    }
+
+    .text-inside-blank {
+        font-size: 15px;
+        top: 40PX;
+        width: 300px;
+    }
+
+    .text-under-blank {
+        top: 550px;
+        left: 30PX;
+        font-size: 15px;
+        width: 300px;
+
+    }
+
+    .right-under-blank {
+        top: 550px;
+        left: 400px;
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .top-right-image img {
+        width: 300PX;
+        height: auto;
+        height: 280PX;
+
+    }
+
+    .social-icons {
+        right: 20px;
+
+
+    }
+
+    .phone-number {
+        font-size: 18px;
+        text-align: left;
+        left: 290PX;
+        top: 110px;
+
+    }
+
+    .text-inside-gray-rectangle {
+
+        font-size: 66px;
+        top: 80px;
+
+    }
+
+    .text-inside-gray-rectangle2 {
+
+        font-size: 30px;
+
+
+    }
+
+    .gray-rectangle {
+        height: 400px;
+
+    }
+
+    .text-under-blank {
+        top: 670px;
+        left: 30PX;
+        font-size: 20px;
+    }
+
+    .right-under-blank {
+        top: 670px;
+        left: 360px;
+        font-size: 20px;
+        width: 260px;
+    }
+
+
+}
+
+
+@media screen and (min-device-width: 400px) and (max-device-width: 450px) {
+    .text-inside-gray-rectangle {
+
+        top: 90px;
+
+    }
+
+    .text-inside-gray-rectangle2 {
+        top: 200px;
+
+    }
+
+
+    .blank-sheet {
+        width: 80%;
+        height: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        right: 20px;
+        top: 200px;
+
+    }
+
+    .top-right-image {
+        order: 2;
+        top: 0px;
+        left: 250PX;
+
+    }
+
+    .top-right-image img {
+        width: 120PX;
+        height: auto;
+        height: 200PX;
+
+    }
+
+    .gray-rectangle {
+        order: 1;
+        margin-top: 20px;
+
+    }
+
+    .text-inside-blank {
+        font-size: 11px;
+        text-align: center;
+        top: 40PX;
+        width: 200px;
+    }
+
+    .phone-number {
+        font-size: 10px;
+        text-align: left;
+        left: 220PX;
+        top: 90px;
+
+    }
+
+    .text-under-blank {
+        top: 500px;
+        left: 30PX;
+        font-size: 12px;
+    }
+
+    .right-under-blank {
+        top: 500px;
+        left: 220px;
+        font-size: 12px;
+        width: 160px;
+    }
+
+    .experience-text {
+        font-size: 10px;
+
+    }
+
+    .year2 {
+        font-size: 9px;
+    }
+
+    .first-text,
+    .second-text {
+        font-size: 8px;
+    }
+
+    .social-icons img {
+        width: 10px;
+
     }
 }
